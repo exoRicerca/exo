@@ -46,7 +46,7 @@ function sliderSettings(images) {
     infinite: true,
     slide: 'li',
     slidesToShow: 1,
-    speed: 500,
+    speed: 100,
     variableWidth: false,
     responsive: [{
       breakpoint: 800,

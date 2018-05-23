@@ -6,6 +6,13 @@ import SchemaDotOrg from '../../Components/SchemaDotOrg';
 
 Scrivito.provideComponent('Event', ({ page }) =>
   <div>
+    <section className="linkHome">
+      <div className="container">
+		<p>
+		  <a href="/"><i class="fa fa-home"></i>Home</a>
+		</p>
+	  </div>
+	</section>
     <section className="bg-white">
       <div className="container">
         <Scrivito.ContentTag tag="h1" className="h2" content={ page } attribute="title" />
@@ -31,7 +38,7 @@ function EventDate({ date }) {
     );
   }
 
-  return formatDate(date, 'mm/dd/yyyy');
+  return formatDate(date, 'dd/mm/yyyy');
 }
 
 const EventLocation = Scrivito.connect(({ event }) => {

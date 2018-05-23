@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
 import NavChild from './NavChild';
+import getHomepage from '../../utils/getHomepage.js';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class Nav extends React.Component {
     return (
       <Scrivito.ChildListTag
         className="nav navbar-nav navbar-right"
-        parent={ Scrivito.Obj.root() }
+        parent={ getHomepage() }
         renderChild={
           child => <NavChild
             child={ child }

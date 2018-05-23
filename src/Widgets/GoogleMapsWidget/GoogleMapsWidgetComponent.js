@@ -72,7 +72,7 @@ class GoogleMapsWidgetComponent extends React.Component {
   }
 
   googleMapsImageUrl() {
-    const address = this.props.widget.get('address') || 'Brandenburg Gate, Berlin, Germany';
+    const address = this.props.widget.get('Exo-Ricerca') || 'Via del Gallitello, 116/i, Potenza, Italy';
     const zoom = this.props.widget.get('zoom') || '15';
     const key = googleMapsApiKey();
 

@@ -25,14 +25,17 @@ Scrivito.provideComponent('ContactFormWidget', ({ widget }) => {
         <div className="hidden">
           <label>Don’t fill this out: <input name="bot-field" /></label>
         </div>
+		<div className="col-sm-4 col-sm-offset-4">
+		  <h3>Contattaci</h3>
+		</div>
         <div className="col-sm-6">
           <div className="form-group">
-            <label htmlFor="contactName">Your name</label>
+            <label htmlFor="contactName">Nome e Cognome</label>
             <input
               className="form-control input-lg"
               id="contactName"
               name="contactName"
-              placeholder="Name"
+              placeholder="Nome e Cognome"
               type="text"
               required
             />
@@ -40,51 +43,27 @@ Scrivito.provideComponent('ContactFormWidget', ({ widget }) => {
         </div>
         <div className="col-sm-6">
           <div className="form-group">
-            <label htmlFor="contactFamilyName">Family name</label>
-            <input
-              className="form-control input-lg"
-              id="contactFamilyName"
-              name="contactFamilyName"
-              placeholder="Family name"
-              type="text"
-              required
-            />
-          </div>
-        </div>
-        <div className="col-sm-6">
-          <div className="form-group">
-            <label htmlFor="contactEmail">Email address</label>
+            <label htmlFor="contactEmail">Indirizzo e-mail</label>
             <input
               className="form-control input-lg"
               id="contactEmail"
               name="contactEmail"
-              placeholder="Email"
+              placeholder="Indirizzo e-mail"
               type="email"
               required
             />
           </div>
         </div>
-        <div className="col-sm-6">
-          <div className="form-group">
-            <label htmlFor="contactCompany">Company (optional)</label>
-            <input
-              className="form-control input-lg"
-              id="contactCompany"
-              name="contactCompany"
-              placeholder="Company"
-              type="text"
-            />
-          </div>
-        </div>
+
         <div className="col-sm-12">
           <div className="form-group">
-            <label htmlFor="contactMessage">Message</label>
+            <label htmlFor="contactMessage">Scrivi il tuo messaggio</label>
             <textarea
               className="form-control input-lg"
               rows="3"
               id="contactMessage"
               name="contactMessage"
-              placeholder="Your Message..."
+              placeholder="Scrivi il tuo messaggio"
               required
             />
           </div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
 import Helmet from 'react-helmet';
+import getHomepage from '../utils/getHomepage.js';
 
 class GoogleAnalytics extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class GoogleAnalytics extends React.Component {
 
   componentDidMount() {
     Scrivito.load(() => {
-      const rootPage = Scrivito.Obj.root();
+      const rootPage = getHomepage();
       if (!rootPage) { return; }
       return rootPage.get('googleAnalyticsTrackingId');
     }).then(trackingId => {

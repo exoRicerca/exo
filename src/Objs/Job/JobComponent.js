@@ -7,6 +7,13 @@ import SchemaDotOrg from '../../Components/SchemaDotOrg';
 Scrivito.provideComponent('Job', ({ page }) => {
   return (
     <div>
+	  <section className="linkHome">
+		<div className="container">
+		  <p>
+			<a href="/"><i class="fa fa-home"></i>Home</a>
+		  </p>
+		</div>
+	  </section>
       <section className="bg-white">
         <div className="container">
           <JobDatePosted datePosted={ page.get('datePosted') } />
@@ -107,9 +114,9 @@ const JobLocation = Scrivito.connect(({ job }) => {
   return (
     <React.Fragment>
       <h2 className="h5">
-        <i className="fa fa-map-marker fa-lg" aria-hidden="true" title="location" />
-        { ' ' }
-        { address }
+        <i className="" aria-hidden="true" title="location" />
+        {  }
+        {  }
       </h2>
     </React.Fragment>
   );

@@ -555,6 +555,23 @@ $easing: cubic-bezier(0.7, 0, 0, 0.7);
     min-height: 150px;
   }
 }
+
+/*@media (max-width: 992px) {
+.bg-dark-image,
+.bg-grey,
+.bg-greydark,
+.bg-greylight,
+.bg-greymiddle,
+.bg-greywhite,
+.bg-white,
+.bg-brand-primary,
+.bg-brand-secondary {
+  padding: 130px 0;
+  clear: both;
+  position: relative;
+}
+}*/
+
 @media (max-width: $screen-xs-max) {
   .bg-dark-image,
   .bg-grey,
@@ -2587,7 +2604,7 @@ _:-ms-fullscreen,
 .slick-gallary-fluid {
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 100px 0;
+  padding: 50px 0 80px 0;
   position: relative;
 }
 .slick-gallary-fluid .slick-slide {
@@ -2692,6 +2709,7 @@ _:-ms-fullscreen,
   .slick-gallary-fluid .slick-dots li button .image {
     max-width: 150px;
     max-height: 100px;
+	background-position: left !important;
   }
 }
 @media (max-width: $screen-sm-max) {
@@ -3132,4 +3150,29 @@ _:-ms-fullscreen,
     font-size: 35px;
     line-height: 45px;
   }
+}
+
+/*Personalizzazioni*/
+
+@media (max-width: $screen-sm-max) {
+  .navLang > li{
+	float: left;
+  }
+  
+  .navLang{
+	padding: 5px 10px;
+  }
+}
+
+.linkHome{
+    padding: 40px 10px 0px 0px;
+    text-align: right;
+}
+
+.linkHome>div>p{
+  margin: 0px !important;
+}
+
+.linkHome>div>p>a>i{
+  padding-right: 5px;
 }

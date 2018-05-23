@@ -14,7 +14,7 @@ class EventOverviewWidgetComponent extends React.Component {
   }
 
   render() {
-    let eventsSearch = Scrivito.Obj.where('_objClass', 'equals', 'Event').order('date', 'asc');
+    let eventsSearch = Scrivito.Obj.where('_objClass', 'equals', 'Event').order('date', 'desc');
     const filterTags = this.props.widget.get('tags');
     if (filterTags.length) {
       eventsSearch = eventsSearch.and('tags', 'equals', filterTags);
@@ -84,7 +84,7 @@ const EventItem = Scrivito.connect(({ event }) =>
         }
       >
         <span className="box-date">
-          { formatDate(event.get('date'), 'mm/dd') }
+          { formatDate(event.get('date'), 'dd/mm/yy') }
         </span>
         <span className="box-topic dark-background">
           <h3 className="h3">{ event.get('title') }</h3>

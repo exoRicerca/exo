@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
 import Helmet from 'react-helmet';
+import getHomepage from '../utils/getHomepage.js';
 
 class NotFoundErrorPage extends React.Component {
   componentDidMount() {
@@ -29,7 +30,7 @@ class NotFoundErrorPage extends React.Component {
               <h2 className="hero-small">The page you are looking for does not exist.</h2>
             </div>
             <div className="text-center">
-              <Scrivito.LinkTag to={ Scrivito.Obj.root() } className="btn btn-primary">
+              <Scrivito.LinkTag to={ getHomepage() } className="btn btn-primary">
                 Go to mainpage <i className="fa fa-angle-right fa-4" aria-hidden="true" />
               </Scrivito.LinkTag>
             </div>

@@ -2,6 +2,7 @@ import * as Scrivito from 'scrivito';
 import { truncate } from 'lodash-es';
 import { textExtractFromObj } from './textExtract';
 import urlFromBinary from './urlFromBinary';
+import getHomepage from './getHomepage.js';
 
 function getMetaData(page) {
   const meta = [
@@ -22,7 +23,7 @@ function getMetaData(page) {
     meta.push({ name: 'description', content: description });
   }
 
-  const root = Scrivito.Obj.root();
+  const root = getHomepage();
   if (root) {
     const facebookAppId = root.get('facebookAppId');
     if (facebookAppId) {

@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as Scrivito from 'scrivito';
 import InPlaceEditingPlaceholder from '../../Components/InPlaceEditingPlaceholder';
 import SchemaDotOrg from '../../Components/SchemaDotOrg';
+import getHomepage from '../../utils/getHomepage.js';
 
 Scrivito.provideComponent('AddressWidget', ({ widget }) => {
   return (
@@ -22,7 +23,7 @@ Scrivito.provideComponent('AddressWidget', ({ widget }) => {
 });
 
 const Logo = Scrivito.connect(() => {
-  const root = Scrivito.Obj.root();
+  const root = getHomepage();
   if (!root) { return null; }
 
   const logo = root.get('logoDark');

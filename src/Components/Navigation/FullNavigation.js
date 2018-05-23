@@ -4,6 +4,7 @@ import CollapseToggle from './CollapseToggle';
 import Logo from './Logo';
 import Nav from './Nav';
 import { SearchBox, SearchIcon } from './Search';
+import LanguageSwitch from './LanguageSwitch';
 
 class FullNavigation extends React.Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class FullNavigation extends React.Component {
               toggleExpanded={ this.toggleExpanded }
             />
             <Logo scrolled={ scrolled } navigationStyle={ navigationStyle } />
+			<LanguageSwitch />
             <SearchIcon toggleSearch={ toggleSearch } />
           </div>
 

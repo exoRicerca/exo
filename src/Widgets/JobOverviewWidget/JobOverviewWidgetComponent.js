@@ -5,7 +5,7 @@ import InPlaceEditingPlaceholder from '../../Components/InPlaceEditingPlaceholde
 Scrivito.provideComponent('JobOverviewWidget', ({ widget }) => {
   let jobsSearch = Scrivito.getClass('Job').all();
   if (widget.get('location')) {
-    jobsSearch = jobsSearch.and('location', 'containsPrefix', widget.get('location'));
+    jobsSearch = jobsSearch.and('locationLocality', 'containsPrefix', widget.get('location'));
   }
   const jobs = [...jobsSearch];
 
@@ -41,14 +41,7 @@ const JobItem = Scrivito.connect(({ job }) => {
         />
         <span className="box-topic arrow-right">
           <h3 className="h3">{ job.get('title') }</h3>
-          <span>
-            <i
-              className={ `fa ${location ? 'fa-map-marker' : ''} fa-2x` }
-              aria-hidden="true"
-              title="location"
-            />
-            <span>{ location }</span>
-          </span>
+          
           <i className="fa fa-angle-right" aria-hidden="true" />
         </span>
       </Scrivito.LinkTag>
