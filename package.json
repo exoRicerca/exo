@@ -65,5 +65,7 @@
     "start": "webpack-dev-server --open",
     "eslint": "eslint --max-warnings 1 src/"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-cookie-banner": "^4.0.0"
+  }
 }

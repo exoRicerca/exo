@@ -7,20 +7,23 @@ import GoogleAnalytics from './Components/GoogleAnalytics';
 import Intercom from './Components/Intercom';
 import Navigation from './Components/Navigation';
 import NotFoundErrorPage from './Components/NotFoundErrorPage';
+import CookieConsent from './Components/CookieConsent';
 
 export default function App() {
   return (
     <ErrorBoundary>
       <div>
+	  	<CookieConsent />	
         <div className="content-wrapper">
           <Navigation />
           <Scrivito.CurrentPage />
           <NotFoundErrorPage />
         </div>
-        <Footer />
+
+        <Footer />				
         <CurrentPageMetaData />
         <GoogleAnalytics />
-        <Intercom />
+        <Intercom />	
       </div>
     </ErrorBoundary>
   );
