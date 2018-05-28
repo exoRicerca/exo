@@ -2432,7 +2432,7 @@ footer {
 
   a,
   a:hover,
-  a:focus {
+	a:focus {
     color: $theme-greydark;
     text-decoration: none;
   }
@@ -2499,27 +2499,27 @@ _:-ms-fullscreen,
     left,
     $brand-secondary 10%,
     rgba(255, 255, 255, 0) 42%
-  );
+	);
   background: -webkit-linear-gradient(
     left,
     $brand-secondary 10%,
     rgba(255, 255, 255, 0) 42%
-  );
+	);
   background: -o-linear-gradient(
     left,
     $brand-secondary 10%,
     rgba(255, 255, 255, 0) 42%
-  );
+	);
   background: -ms-linear-gradient(
     left,
     $brand-secondary 10%,
     rgba(255, 255, 255, 0) 42%
-  );
+	);
   background: linear-gradient(
     to right,
     $brand-secondary 10%,
     rgba(255, 255, 255, 0) 42%
-  );
+	);
   -webkit-animation: load3 1.4s infinite linear;
   animation: load3 1.4s infinite linear;
 }
@@ -2593,7 +2593,7 @@ _:-ms-fullscreen,
 .bg-greydark,
 .bg-greymiddle {
   .slick-prev:before,
-  .slick-next:before {
+	.slick-next:before {
     color: #fff;
   }
 }
@@ -2754,7 +2754,7 @@ _:-ms-fullscreen,
 .bg-map {
   a,
   a:hover,
-  a:focus {
+	a:focus {
     color: $theme-greydark;
     text-decoration: none;
   }
@@ -3158,15 +3158,26 @@ _:-ms-fullscreen,
   .navLang > li{
 	float: left;
   }
-  
+
   .navLang{
 	padding: 5px 10px;
   }
 }
 
+@media(max-width: 1280px){
+  .react-cookie-banner > span{
+	margin-right: 100px !important;
+	padding: 10px 10px !important;
+  }
+
+  .react-cookie-banner{
+	height: 110px !important;
+  }
+}
+
 .linkHome{
-    padding: 40px 10px 0px 0px;
-    text-align: right;
+  padding: 40px 10px 0px 0px;
+  text-align: right;
 }
 
 .linkHome>div>p{
@@ -3176,3 +3187,4 @@ _:-ms-fullscreen,
 .linkHome>div>p>a>i{
   padding-right: 5px;
 }
+
