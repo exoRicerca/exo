@@ -9,7 +9,7 @@ Scrivito.provideComponent('Event', ({ page }) =>
     <section className="linkHome">
       <div className="container">
 		<p>
-		  <a href="/"><i class="fa fa-home"></i>Home</a>
+		  <a href="/blog-a18b88189dbe2d4f"><i class="fa fa-arrow-circle-left fa-1x"></i>Torna al Blog</a>
 		</p>
 	  </div>
 	</section>
