@@ -839,13 +839,13 @@ section.navbar-fixed { padding-top: 80px; }
 }
 
 .navbar-transparent {
-  background: transparent;
+  background: white;
   @include transition(all 0.3s ease-in-out);
   box-shadow: none;
 }
 /* .bg-dark-image .navbar-brand { background: $logo-white no-repeat center center / contain; } */
 .bg-dark-image .navbar-nav > li > a {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 /* .scrolled.bg-dark-image .navbar-brand { background: $logo-dark no-repeat center center / contain; } */

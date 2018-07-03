@@ -5,9 +5,11 @@ function getHomepage() {
   if (!currentPage) { return; }
 
   const path = currentPage.path();
-  if (!path) { return; }
-  
   let language = '/lang/it';
+  if (!path) {
+    return Scrivito.Obj.getByPath(language);
+  } 
+  
   if (path.startsWith('/lang/')) {
     language = path.substr(0, 8);
   }
